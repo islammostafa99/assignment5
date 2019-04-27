@@ -1,4 +1,4 @@
-package eg.edu.alexu.datastucture.stack.cs22;
+package eg.edu.alexu.datastucture.stack.cs13;
 public class Stack implements IStack{
     private LinkedList l = new LinkedList();
     private int top=-1;
