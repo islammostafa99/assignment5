@@ -1,0 +1,5 @@
+package eg.edu.alexu.datastucture.stack.cs22;
+public interface IExpressionEvaluator {
+    public String infixToPostfix(String expression);
+    public int evaluate(String expression);
+}
