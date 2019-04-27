@@ -1,0 +1,39 @@
+package eg.edu.alexu.datastucture.stack.cs22;
+public class Stack implements IStack{
+    private LinkedList l = new LinkedList();
+    private int top=-1;
+    public void push(Object s){
+        top++;
+        l.add(top,s);
+    }
+    public Object pop(){
+        Object v;
+        if(!l.isEmpty()) {
+            v = l.get(top);
+            l.remove(top);
+            top--;
+        }else{
+            v=null;
+        }
+        return v;
+    }
+    public Object peek(){
+        Object v;
+        if(!l.isEmpty()) {
+            v = l.get(top);
+        }else{
+            v=null;
+        }
+        return v;
+    }
+    public boolean isEmpty(){
+        if(l.isEmpty()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public int size(){
+        return top+1;
+    }
+}
