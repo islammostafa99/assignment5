@@ -1,0 +1,14 @@
+package eg.edu.alexu.datastucture.stack.cs22;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        ExpressionEvaluator g=new ExpressionEvaluator();
+        String r=new String();
+        System.out.println("please Enter the infix:");
+        r=input.next();
+        System.out.println("the postfix is:"+g.infixToPostfix(r));
+        System.out.println("the solution is:"+g.evaluate(r));
+    }
+}
