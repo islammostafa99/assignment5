@@ -1,4 +1,4 @@
-package eg.edu.alexu.datastucture.stack.cs22;
+package eg.edu.alexu.datastucture.stack.cs13;
 
 public interface IStack {
     public Object pop();
